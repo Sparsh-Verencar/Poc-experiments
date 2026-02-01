@@ -2,7 +2,7 @@
 LEX PROGRAMS (FLEX)
 
 This repository contains Lex (Flex) programs used for Compiler Design experiments. Use the setup files to download flex and dev cpp.
-
+Refer to this video [https://youtu.be/GnpxL7mxwj8?si=XFMiFZTGz-nenWgg]
 ------------------------------------------------------------
 PREREQUISITES
 ------------------------------------------------------------

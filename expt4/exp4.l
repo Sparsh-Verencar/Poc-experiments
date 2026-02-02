@@ -15,7 +15,7 @@
     printf("Valid person name\n");
 }
 
-[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,} {
+[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,} { //Match a dot, followed by at least two letters.
     printf("Valid email address\n");
 }
 

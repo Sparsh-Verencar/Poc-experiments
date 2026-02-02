@@ -673,7 +673,7 @@ YY_RULE_SETUP
 case 4:
 YY_RULE_SETUP
 #line 18 "exp4.l"
-{
+{ //Match a dot, followed by at least two letters.
     printf("Valid email address\n");
 }
 	YY_BREAK

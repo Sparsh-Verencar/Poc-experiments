@@ -2,16 +2,16 @@
 #include<stdio.h>
 #include<stdlib.h>
 int sum = 0;
-int count = 0; 
+int sq = 0;
 %}
 
 %%
 [0-9]+ {
-    sum += atoi(yytext);
-    count++;
+    sq = atoi(yytext);
+    sum += sq*sq;
 }
-avg {
-    printf("Average:%.2f", (float)sum/count);
+sum {
+    printf("Sum:%d", sum);
 }
 %%
 

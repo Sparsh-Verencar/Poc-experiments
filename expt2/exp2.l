@@ -1,11 +1,17 @@
 %{
 #include <stdio.h>
 int file_line_count = 0;
+int file_word_count = 0;
 %}
 
 %%
 \n      { file_line_count++; }
-<<EOF>>   { printf("%d\n", file_line_count+1);return 0; }
+[a-zA-Z]+ { printf("word found:%s\n", yytext); file_word_count++;}
+<<EOF>>   { 
+    printf("file line count:%d\n", file_line_count+1);
+    printf("file word count:%d\n", file_word_count);
+    return 0; 
+}
 .       ;
 %%
 

@@ -17,7 +17,7 @@ char a[20];
         a[count++] = digit;
         num = num / 8;
     }
-
+    printf("Octal:");
     for (i = count - 1; i >= 0; i--) {
         printf("%c", a[i]);
     }
@@ -28,6 +28,7 @@ char a[20];
 int yywrap() { return 1; }
 
 int main() {
+    printf("Decimal:");
     yylex();
     return 0;
 }

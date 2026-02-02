@@ -614,7 +614,7 @@ YY_RULE_SETUP
         a[count++] = digit;
         num = num / 8;
     }
-
+    printf("Octal:");
     for (i = count - 1; i >= 0; i--) {
         printf("%c", a[i]);
     }
@@ -1518,6 +1518,7 @@ int main()
 int yywrap() { return 1; }
 
 int main() {
+    printf("Decimal:");
     yylex();
     return 0;
 }

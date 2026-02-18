@@ -607,7 +607,7 @@ YY_RULE_SETUP
 case 2:
 YY_RULE_SETUP
 #line 9 "exp3b.l"
-{consonant_counter++;} //\n for the infinite file error at runtime
+{consonant_counter++;} //\n,space added to not count spaces as consonant
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
 #line 10 "exp3b.l"

@@ -519,7 +519,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 8 "exp7b.l"
+#line 7 "exp7b.l"
 
 #line 525 "lex.yy.c"
 
@@ -606,7 +606,7 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 9 "exp7b.l"
+#line 8 "exp7b.l"
 {
     sq = atoi(yytext);
     sum += sq*sq;
@@ -614,14 +614,14 @@ YY_RULE_SETUP
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 13 "exp7b.l"
+#line 12 "exp7b.l"
 {
     printf("Sum:%d", sum);
 }
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 16 "exp7b.l"
+#line 15 "exp7b.l"
 ECHO;
 	YY_BREAK
 #line 628 "lex.yy.c"
@@ -1510,8 +1510,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 16 "exp7b.l"
-
+#line 15 "exp7b.l"
 
 int yywrap()
 {

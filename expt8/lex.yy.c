@@ -516,7 +516,7 @@ YY_DECL
 	register char *yy_cp, *yy_bp;
 	register int yy_act;
 
-#line 9 "exp8.l"
+#line 8 "exp8.l"
 
 #line 522 "lex.yy.c"
 
@@ -603,14 +603,14 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 10 "exp8.l"
+#line 9 "exp8.l"
 {
     if(strcmp(word, yytext) == 0)
         count++;
 }
 	YY_BREAK
 case YY_STATE_EOF(INITIAL):
-#line 14 "exp8.l"
+#line 13 "exp8.l"
 {
     printf("Frequency of %s: %d", word, count);
     return 0;
@@ -618,7 +618,7 @@ case YY_STATE_EOF(INITIAL):
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 18 "exp8.l"
+#line 17 "exp8.l"
 ECHO;
 	YY_BREAK
 #line 625 "lex.yy.c"
@@ -1505,8 +1505,7 @@ int main()
 	return 0;
 	}
 #endif
-#line 18 "exp8.l"
-
+#line 17 "exp8.l"
 
 int yywrap()
 {
@@ -1518,6 +1517,5 @@ int main(int argc, char *argv[])
     yylex();
     return 0;
 }
-
 //input format >>exp8out <word> < <text-file>.txt
 //where >> is terminal, don't type that

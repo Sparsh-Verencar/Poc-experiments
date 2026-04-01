@@ -4,7 +4,6 @@
 int sum = 0;
 int sq = 0;
 %}
-
 %%
 [0-9]+ {
     sq = atoi(yytext);
@@ -14,7 +13,6 @@ sum {
     printf("Sum:%d", sum);
 }
 %%
-
 int yywrap()
 {
     return 1;

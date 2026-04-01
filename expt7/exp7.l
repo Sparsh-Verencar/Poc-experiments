@@ -4,7 +4,6 @@
 int sum = 0;
 int count = 0; 
 %}
-
 %%
 [0-9]+ {
     sum += atoi(yytext);
@@ -14,7 +13,6 @@ avg {
     printf("Average:%.2f", (float)sum/count);
 }
 %%
-
 int yywrap()
 {
     return 1;

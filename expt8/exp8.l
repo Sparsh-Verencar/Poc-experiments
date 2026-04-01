@@ -5,7 +5,6 @@
 char word[50];
 int count = 0;
 %}
-
 %%
 [a-zA-Z0-9]+ {
     if(strcmp(word, yytext) == 0)
@@ -16,7 +15,6 @@ int count = 0;
     return 0;
 }
 %%
-
 int yywrap()
 {
     return 1;
@@ -27,6 +25,5 @@ int main(int argc, char *argv[])
     yylex();
     return 0;
 }
-
 //input format >>exp8out <word> < <text-file>.txt
 //where >> is terminal, don't type that

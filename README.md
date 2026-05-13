@@ -165,7 +165,7 @@ output < input.txt
 ```bash
 bison -d filename.y
 flex filename.l
-gcc y.tab.c lex.yy.c -o output
+gcc filename.tab.c lex.yy.c -o output
 output < input.txt
 ```
 
@@ -184,7 +184,7 @@ exp1 < test.txt
 ```bash
 bison -d Calculator.y
 flex calculator.l
-gcc y.tab.c lex.yy.c -o calculator
+gcc Calculator.tab.c lex.yy.c -o calculator
 calculator
 ```
 
